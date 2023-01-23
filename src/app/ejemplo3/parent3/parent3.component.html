@@ -1,0 +1,11 @@
+<h3>Ejemplo 3: Child to Parent: Sharing Data via Output() and EventEmitter</h3>
+<div class="colores3">
+
+  Another way to share data is to emit data from the child, which can be listened to by the parent.
+
+  <br><br>
+
+  Mensaje en el padre: {{message}}<br>
+      <app-child3 (messageEvent)="receiveMessage($event)"></app-child3>
+
+</div>

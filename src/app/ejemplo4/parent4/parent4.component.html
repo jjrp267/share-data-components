@@ -1,0 +1,11 @@
+<h3>Ejemplo 4: Unrelated Components: Sharing Data with a Service</h3>
+<div class="colores4">
+
+  When passing data between components that lack a direct connection, such as siblings, grandchildren, etc, you should you a shared service. When you have data that should aways been in sync, I find the RxJS BehaviorSubject very useful in this situation.
+
+  <br>
+  <br>
+
+  este es el mensaje en el padre: {{message}}
+    <button (click)="newMessage()">Enviar mensaje desde el padre</button>
+</div>

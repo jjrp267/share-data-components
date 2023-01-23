@@ -1,0 +1,8 @@
+<h3>Ejemplo 1. Parent to Child: Sharing Data via Input</h3>
+<div class="colores">This is probably the most common and straightforward method of sharing data. It works by using the @Input() decorator to allow data to be passed via the template.
+<br><br>
+
+    <p>this is the message in parent1: {{ parentMessage }}</p>
+
+    <app-child1 [childMessage]="parentMessage"></app-child1>
+</div>

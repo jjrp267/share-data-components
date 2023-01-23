@@ -1,0 +1,11 @@
+<h3>Ejemplo 2: Child to Parent: Sharing Data via ViewChild</h3>
+<div class="colores2">
+
+  ViewChild allows a one component to be injected into another, giving the parent access to its attributes and functions. One caveat, however, is that child won’t be available until after the view has been initialized. This means we need to implement the AfterViewInit lifecycle hook to receive the data from the child.
+<br><br>
+    Message in parent 2: {{ name }}
+    <hello name="{{ name }}" ></hello>
+</div>
+<p #pRef>
+  Start editing to see some magic happen :)
+</p>
